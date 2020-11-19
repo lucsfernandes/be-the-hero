@@ -13,7 +13,7 @@ export default function Incidents() {
 
     const history = useHistory();
 
-    const ongId = localStorage('ongId');
+    const ongId = localStorage.getItem('ongId');
 
     async function handleNewIncident(e) {
         e.preventDefault();
